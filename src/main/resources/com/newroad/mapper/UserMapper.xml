@@ -34,7 +34,7 @@
       #{enable,jdbcType=BIT}, #{agencyId,jdbcType=INTEGER})
   </insert>
 
-  <select id="getUsers" resultType="user">
+  <select id="getUserList" resultMap="BaseResultMap">
     select <include refid="Base_Column_List"/>
      from user
 
